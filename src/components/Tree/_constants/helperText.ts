@@ -1,0 +1,9 @@
+export const trunkColorHelperText = 'Color in hex code (without the #) that sets the color of the trunk';
+export const leafIconHelperText = 'Icon';
+export const leaftIconAltHelperText = 'Alternate text for icon when no icon is uploaded';
+export const leafTitleHelperText = 'Title';
+export const leafContentHelperText = 'Main body content';
+export const leafCollapsibleContentHelperText = 'Collapsible body content';
+export const ImageHelperText = 'Image';
+export const ImageAltHelperText = 'Alternate text for image when no image is uploaded';
+export const leafPlacementHelperText = 'Placement of text/image';

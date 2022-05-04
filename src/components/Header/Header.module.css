@@ -1,0 +1,46 @@
+.header-1,
+.header-2,
+.header-3,
+.headline,
+.subhead-3 {
+   font-weight: 700;
+   margin-bottom: 0px;
+   color: #000000;
+   padding: 0;
+}
+
+.subhead-1,
+.subhead-2 {
+   font-weight: 500;
+   margin-bottom: 0px;
+   color: #000000;
+   padding: 0;
+}
+
+.header-1 {
+   font-size: 60px;
+}
+
+.header-2 {
+   font-size: 44px;
+}
+
+.header-3 {
+   font-size: 38px;
+}
+
+.headline {
+   font-size: 30px;
+}
+
+.subhead-1 {
+   font-size: 44px;
+}
+
+.subhead-2 {
+   font-size: 38px;
+}
+
+.subhead-3 {
+   font-size: 24px;
+}

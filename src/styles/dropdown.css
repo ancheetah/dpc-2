@@ -1,0 +1,19 @@
+.submenu-left > .dropdown-menu {
+   right: 100.5%;
+   left: auto;
+   top: 60%;
+}
+.submenu-right > .dropdown-menu {
+   right: auto;
+   left: 100.5%;
+   top: 60%;
+}
+
+/* removes arrow from dropdown menu */
+.dropdown-toggle::after {
+   display: none;
+}
+
+.navbar-toggler {
+   box-shadow: none;
+}

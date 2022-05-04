@@ -1,0 +1,36 @@
+const bundleAnalyzer = require('@next/bundle-analyzer')({
+   enabled: !!process.env.BUNDLE_ANALYZE,
+});
+
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//    reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;
+
+module.exports = bundleAnalyzer({
+   images: {
+      domains: ['cdn.builder.io'],
+   },
+   async headers() {
+      return [
+         {
+            source: '/:path*',
+            headers: [
+               // this will allow site to be framed under builder.io for wysiwyg editing
+               {
+                  key: 'Content-Security-Policy',
+                  value: 'frame-ancestors https://*.builder.io https://builder.io',
+               },
+            ],
+         },
+      ];
+   },
+   env: {
+      // expose env to the browser
+      BUILDER_PUBLIC_KEY: process.env.BUILDER_PUBLIC_KEY,
+      ALGOLIA_APP_ID: process.env.ALGOLIA_APP_ID,
+      ALGOLIA_SEARCH_API_KEY: process.env.ALGOLIA_SEARCH_API_KEY,
+   },
+});

@@ -1,0 +1,21 @@
+// This customizes the bootstrap breakpoints to match with builder.
+
+$grid-breakpoints: (
+   xs: 0,
+   sm: 321px,
+   md: 641px,
+   lg: 1001px,
+   xl: 1200px,
+   xxl: 1400px,
+);
+
+$container-max-widths: (
+   sm: 321px,
+   md: 641px,
+   lg: 1001px,
+   xl: 1200px,
+   xxl: 1400px,
+);
+@import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '/node_modules/mdb-react-ui-kit/dist/scss/bootstrap/bootstrap';

@@ -1,0 +1,20 @@
+.dropdownMenu {
+   border-radius: 0;
+   border: none;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+   padding: 0;
+}
+
+.dropdownItem:hover,
+.dropdownItem:active {
+   background-color: #ffffff;
+}
+
+.dropdownItem:focus-visible {
+   border: none;
+}
